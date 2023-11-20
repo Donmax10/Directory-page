@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+}
+
+
+/* The color root*/
+:root {
+    --CreamyWhite: rgb(252, 245, 237);
+    --WarmPeach: rgb(244, 191, 150);
+    --BurntOrange: rgb(206, 90, 103);
+    --DarkBurgundy: rgb(31, 23, 23);
+}
+
+/* The body*/
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--DarkBurgundy);
+}
+
+/*The wrapper*/
+.wrapper {
+    position: absolute;
+    height: 100vh auto;
+    max-width: 360px;
+    min-width: 80%;
+    background: var(--WarmPeach);
+    text-align: center;
+    box-shadow:  0px 5px 50px 0px var(--BurntOrange), 0px 0px 0px 7px var(--CreamyWhite);
+    border-radius: 7px;
+}
+
+header {
+    text-align: center;
+    color: var(--BurntOrange);
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+/*The two side logo*/
+img {
+    position: absolute;
+    width: 40px;
+    animation: rotate linear 5s infinite;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.right {
+    top: 15%;
+    left: 85%;
+}
+
+.left {
+    top: 15%;
+    right: 85%;
+}
+
+/*The content*/
+.content {
+    padding-top: 20px;
+    list-style: none;
+    text-align: center;
+    margin-left: 15%;
+
+}
+
+li {
+    border: 2px solid var(--DarkBurgundy);
+    width: 80%;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    line-height: 20px;
+    color: var(--DarkBurgundy);
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/*The li hover */
+li:hover {
+    background: var(--DarkBurgundy);
+    color: var(--CreamyWhite);
+}
+
+/*The sign up section*/
+legend {
+    margin-top: 1.3rem;
+    font-size: small;
+    text-transform: capitalize;
+}
+
+#join-btn {
+    padding: 4px 9px;
+    border-radius: 10px;
+    border: none;
+    background: var(--DarkBurgundy);
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--BurntOrange);
+    font-family: Georgia, Times, serif;
+}
+
+/*The login*/
+.login {
+    margin: 1.3rem;
+    text-align: end;
+    font-size: small;
+}
+
+u {
+    cursor: pointer;
+}
